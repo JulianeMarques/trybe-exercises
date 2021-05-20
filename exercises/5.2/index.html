@@ -94,25 +94,34 @@
       elementImg.src = 'https://picsum.photos/200';
       elementDivLeft.appendChild(elementImg);
       
-      // ex 8
+      // ex 8 Adicione uma lista não ordenada com os valores de 1 a 10 
+      //por extenso como valores da lista. 
+      //Essa lista deve ser filha do div criado no passo 6;
+
       const elementUl = document.createElement('ul');
       //tem que ser filho do elementDivRight
       elementDivRight.appendChild(elementUl);
-      // criar uma const pos nao vamos modificar e vamos utilizar um array
+      // criar uma const pois nao vamos modificar e vamos utilizar um array
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
         'Sete', 'Oito', 'Nove', 'Dez']
 
-      // REVISAR
-      // peguei essa parte do garabarito pois nao entendi o que tenho que fazer
+      //criar uma funcao para criar os li com os arrays dentro deles, para inserir
+      // os arrayNumbers e' preciso criar um for in para passar por cada um dos valores
       for (let num in arrayNumbers) {
         const elementLi = document.createElement('li');
         elementLi.innerHTML = arrayNumbers[num];
+        //fazendo o li ser filho de ul
         elementUl.appendChild(elementLi);
       }
 
-      // REVISAR
-      // ex 9
-      const 
+      //ex 9 - Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+      for (let index = 1; index <=3; index +=1) {
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show' + index;
+        elementDivMain.appendChild(elementH3);
+      }
+
+      
 
     </script>
   </body>
