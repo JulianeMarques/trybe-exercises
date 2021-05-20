@@ -143,9 +143,16 @@
       // ex 4 - Centralize o div criado no passo 6 (aquele que possui a classe right-content ). 
       //Dica: para centralizar, basta configurar o margin-right: auto do div ;
       const divRightContent = document.getElementsByClassName('right-content')[0];
-      divRightContent.style.marginRight='auto'
-      
+      divRightContent.style.marginRight = 'auto';
 
+      //ex 5 - Troque a cor de fundo do elemento pai da div criada no passo 3 
+      //(aquela que possui a classe center-content ) para a cor verde;
+      const divCenterContent = document.getElementsByClassName('center-content')[0];
+      ivCenterContent.parentNode.style.backgroundColor = 'green';
+
+      elementUl.lastChild.remove();
+      elementUl.lastChild.remove();
+      
     </script>
   </body>
 </html>
