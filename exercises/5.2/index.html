@@ -129,6 +129,13 @@
       // traz a constante e adiciona uma className
       title.className = 'title';
 
+      // ex 2 - Adicione a classe description nas 3 tags h3 criadas;
+      const elementsH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index +=1) {
+        elementsH3[index].className = 'description';
+      }
+    
+
 
       
 
