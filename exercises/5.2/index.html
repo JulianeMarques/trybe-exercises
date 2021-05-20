@@ -57,44 +57,62 @@
   </head>
   <body>
     <script>
+
+      // ex. 1
       const elementH1 = document.createElement('h1'); 
       elementH1.innerHTML = 'Exercicio 5.2 - JavaScript DOM';
       document.body.appendChild(elementH1);
 
+      // ex.2
       const elementDivMain = document.createElement('div');
       elementDivMain.className = 'main-content';
       document.body.appendChild(elementDivMain);
 
+      // ex. 3
       const elementDivCenter = document.createElement('div');
       elementDivCenter.className = 'center-content';
       elementDivMain.appendChild(elementDivCenter);
 
+      // ex 4
       const paragraph = document.createElement('p');
       paragraph.innerHTML = 'Texto Qualquer';
       elementDivCenter.appendChild(paragraph);
 
+      // ex 5
       const elementDivLeft = document.createElement('div');
       elementDivLeft.className = 'left-content';
       elementDivMain.appendChild(elementDivLeft);
 
+      // ex 6
       const elementDivRight = document.createElement('div');
       elementDivRight.className = 'right-content';
       elementDivMain.appendChild(elementDivRight);
 
+      // ex 7
       const elementImg = document.createElement('img');
       elementImg.className = 'small-image';
       elementImg.src = 'https://picsum.photos/200';
       elementDivLeft.appendChild(elementImg);
       
+      // ex 8
       const elementUl = document.createElement('ul');
+      //tem que ser filho do elementDivRight
       elementDivRight.appendChild(elementUl);
+      // criar uma const pos nao vamos modificar e vamos utilizar um array
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
         'Sete', 'Oito', 'Nove', 'Dez']
+
+      // REVISAR
+      // peguei essa parte do garabarito pois nao entendi o que tenho que fazer
       for (let num in arrayNumbers) {
         const elementLi = document.createElement('li');
         elementLi.innerHTML = arrayNumbers[num];
         elementUl.appendChild(elementLi);
       }
+
+      // REVISAR
+      // ex 9
+      const 
 
     </script>
   </body>
