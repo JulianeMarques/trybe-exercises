@@ -3,60 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <link href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <h1>Formulario</h1>
-    <fieldset>
-        <legend>Dados pessoais</legend>
-        <label for="nome-1"></label>
-        <p>Nome</p>
-        <input type="text" name="nome" id="nome-1" size=50 maxlength="40" required><br><br>
-
-        <label for="email"></label>
-        <p>E-mail</p>
-        <input type="email" name="e-mail" id="email" size=50 maxlength="50" required><br><br>
-
-        <label for="cpf"></label>
-        <p>CPF</p>
-        <input type="number" name="doc-cpf" id="cpf" size=50 maxlength="11" required><br><br>
-
-        <label for="adress"></label>
-        <p>Endereco</p>
-        <input type="text" name="endereco" id="adress" size=50 maxlength="200" required><br><br>
-
-        <label for="city"></label>
-        <p>Cidade</p>
-        <input type="text" name="cidade" id="city" size=50 maxlength="28" required><br><br>
-
-        <label for="state"></label> 
-        <p>Estado - ARRUMAR ESSA PARTE</p>
-        <input type="comboBox" name="nome" id="state" size=50 maxlength="40" required><br><br>
-
-        <label for="casaape"></label>
-        <p>Escolha - ARRUMAR ESSA PARTE</p>
-        <input type="radio" name="casa" id="casaape" size=50 selected>Casa<br><br>
-        <input type="radio" name="ape" id="casaape" size=50 >Apartamento<br><br>
-
-    </fieldset>
-    <fieldset>
-        <label>
-            <p>Resumo do curriculo:</p>
-            <textarea id="curriculo" name="curri" rows="5" cols="50" maxlength="1000" required></textarea>
-            </label>   
-            <label>
-               <p>Cargo:</p>
-               <input type="text" size="50" maxlength="40"  required>
-            </label> 
-            <label>
-                <p>Descricao doCargo:</p>
-                <input type="text" size="50" maxlength="500"  required>
-             </label> 
-             
-    </fieldset>
-
-    <script src="script.js"></script>
+    <header>
+        <h1>Formulário para cadastro de currículo</h1>
+        <p>Preencha os campos abaixo</p>
+    </header>
+    <main>
+        <form>
+            <div>
+                <fieldset>
+                    <div>
+                        <label>Nome:</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>E-mail:</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>CPF:</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>Endereco</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>Cidade</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>Estado</label>
+                        <select>
+                            <option>Selecione seu estado</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Tipo de imovel</label>
+                        <input><span>Casa</span>
+                        <input><span>Apartamento</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for=""> Resumo do Curriculo</label>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <label>Cargo</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>Descricao de Cargo</label>
+                        <input>
+                    </div>
+                    <div>
+                        <label>Data de Inicio</label>
+                        <input>
+                    </div>
+                </fieldset>
+                <button>Enviaaar</button>
+                <button>Limpar</button>
+            </div>
+        </form>
+    </main>
+<section></section>
+<script src="script.js"></script>
 </body>
 </html>
