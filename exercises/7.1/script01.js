@@ -43,3 +43,20 @@ const sortArrayBonus = array => {
 
 const sortedArrayBonus = sortArrayBonus(oddsAndEvens);
 console.log(`Os números ${sortedArrayBonus} se encontram ordenados de forma crescente !`);
+
+// parte 2
+// exericio factorial
+
+const factorial = number => {
+    let result = 1
+
+    for (let index = 2; index <= number; index +=1) {
+        result *= index;
+    }
+
+    return result
+}
+
+console.log(factorial(4))
+
+// exercicio 2
