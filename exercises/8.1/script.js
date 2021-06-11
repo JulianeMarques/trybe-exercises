@@ -51,4 +51,4 @@ console.log(repeat(rightAnswers, studentAnswers, (rAnswer, uAnswer) => {
     return 0;
   }
   return -0.5;
-}))
+}));
