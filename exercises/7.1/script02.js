@@ -27,3 +27,4 @@ const longestWord = (text) => {
 }
 
 console.log(longestWord('ANtonio foi ao banheiro e nao sabemos o que aconteceu'));
+
