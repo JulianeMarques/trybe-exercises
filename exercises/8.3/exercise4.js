@@ -96,6 +96,6 @@ function oldBooksOrdered() {
   )).sort((a, b) => a.releaseYear - b.releaseYear);
 }
 
-// console.log(oldBooksOrdered());
+ console.log(oldBooksOrdered());
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
