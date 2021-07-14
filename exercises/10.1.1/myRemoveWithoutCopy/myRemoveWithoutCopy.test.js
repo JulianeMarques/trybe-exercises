@@ -12,4 +12,7 @@ describe('Requisito 3', () => {
         const myNewArray = myRemoveWithoutCopy(myArray, 3);
         expect(myRemoveWithoutCopy(myArray)).toEqual(myNewArray);
     });
+    it('Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado', () => {
+        expect(myRemoveWithoutCopy([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
+    });
 });
