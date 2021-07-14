@@ -12,6 +12,7 @@ const greetingMessage = (user) => {
     password: 123456,
   };
   
+  // validacao simples se a pessoa usuaria e senha sao iguais
   const verifyCredentials = ({ userName, password }) => {
     if (password === 123456 && userName === "Joana") {
       return greetingMessage(userName);
