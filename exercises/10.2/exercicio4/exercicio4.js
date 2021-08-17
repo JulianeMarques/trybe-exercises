@@ -1,4 +1,4 @@
-const fetch = require('./node-fetch');
+const fetch = require('node-fetch');
 
 const getRepos = (url) => {
   return fetch(url)
@@ -7,5 +7,6 @@ const getRepos = (url) => {
       return data.map((repo) => repo.name);
     });
 }
+
 
 module.exports = getRepos;
